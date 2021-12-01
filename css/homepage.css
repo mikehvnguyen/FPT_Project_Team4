@@ -81,6 +81,14 @@ p{
     font-weight: 500;
     margin-left: 50px;
 }
+
+.thumbnail{
+    border-radius: 50%;
+    max-width: 58px;
+    padding: 5px;
+    margin: 5px auto;
+}
+
 .main{
     margin-top: 30px;
 }
@@ -91,6 +99,7 @@ p{
     margin-bottom: 50px;
 }
 .sidebar{
+    display: inline-block;
     width: 25%;
     padding-left: 15px;
 }
@@ -108,4 +117,40 @@ p{
     margin-bottom: 30px;
     margin-left: 50px;
     border-radius: 20px 20px 20px 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 3px solid #ffffff;
+}
+
+.menusecond{
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.copyright{
+    float: left;
+}
+
+.bottomlinks{
+    float: right;
+    list-style: none;
+}
+
+.bottomlinks li{
+    float: left;
 }

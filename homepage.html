@@ -26,11 +26,17 @@
 </header>
 
 <nav class="nav section">
-    <div class="container">
+    <div class="container menusecond">
         <ul class="menu">
-            <li><a href="#">Food</a> </li>
-            <li><a href="#">Snack</a> </li>
-            <li><a href="#">Beverage</a> </li>
+            <li><a href="#">
+                <img class="thumbnail" src="images/food.jpg"/>
+                Food</a></li>
+            <li><a href="#">
+                <img class="thumbnail" src="images/snack.png"/>
+                Snack</a></li>
+            <li><a href="#">
+                <img class="thumbnail" src="images/drink.jpg"/>
+                Beverage</a></li>
         </ul>
     </div>
 </nav>
@@ -41,29 +47,30 @@
             <div class="entry">
                 <p>
                     <a href="#">
-                    <img src="images/hp1.jpg"/>
+                        <img src="images/hp1.jpg"/>
                     </a>
                 </p>
             </div>
         </article>
-        <aside class="sidebar">
-            <div class="block black">
-                <h2><a href="#">Promotion</a></h2>
-            </div>
-            <div class="block">
-                <h2><a href="#">Order</a></h2>
-            </div>
-        </aside>
+        <div class="center">
+            <button type="button" onclick="alert('Hello world!')">Promotion</button>
+            <button type="button" onclick="alert('Hello world!')">Order</button>
+        </div>
     </div>
 </selection>
 
-<footer class="footer section">
-    <div class="container">
-    <p>
-        Copyright 2015 Burger King Corporation.All Rights Reserved.
-    </p>
+<div class="footer">
+    <div class="copyright">
+    <p>Copyright 2015 Burger King Corporation.All Rights Reserved.</p>
     </div>
-</footer>
+
+    <ul class="bottomlinks">
+        <li><a href="#"> About Us</a></li>
+        <li><a href="#"> Contact</a></li>
+    </ul>
+
+
+</div>
 
 </body>
 </html>
