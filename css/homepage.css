@@ -177,14 +177,15 @@ p{
     /*background: rgba(230, 8, 8, 0.75);*/
     /*height: 40px;*/
     /*width: 180px;*/
-/*    line-height: 40px;*/
-/*    border-radius: 50px;*/
-/*    padding: 0 10px;*/
-/*    background-size: 100%;*/
-/*    transition: all 0.8s;*/
-/*!*    z-index: 999;*!*/
-/*    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);*/
+    /*line-height: 40px;*/
+    /*border-radius: 50px;*/
+    /*padding: 0 10px;*/
+    /*background-size: 100%;*/
+    /*transition: all 0.8s;*/
+
+    /*box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);*/
     right: 33px;
+    bottom: 70px;
 
 }
 
