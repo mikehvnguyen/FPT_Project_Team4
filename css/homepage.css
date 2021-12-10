@@ -20,11 +20,13 @@ img{
     max-width: 100%;
 }
 p{
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
+
 .section{
     float:left;
     width: 100%;
+    box-sizing: border-box;
 }
 .container{
     float: none;
@@ -32,6 +34,7 @@ p{
     margin: 0 auto;
 }
 .header{
+    position: fixed;
     background-color: #e89245;
     border-bottom: 1px solid #eeeeee;
     padding: 5px 0;
@@ -63,14 +66,17 @@ p{
 .toplinks li a{
     color: #ffffff;
     font-weight: 500;
-    line-height: 52.5px;
+    line-height: 128px;
 }
 .nav{
+    position: fixed;
     background-color: #ffffff;
     border-bottom: 1px solid #eeeeee;
     padding: 20px 0;
+    top:128px;
 }
 .menu li{
+
     float: left;
     list-style: none;
     margin-right: 30px;
@@ -92,7 +98,7 @@ p{
 }
 
 .main{
-    margin-top: 30px;
+    margin-top: 220px;
 }
 .content{
     float:left;
@@ -144,19 +150,18 @@ p{
     justify-content: center;
 }
 
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+.footer{
+    /*position: fixed;*/
     width: 100%;
+    height: 50px;
     background-color: #6e1e1e;
-    color: white;
-    text-align: center;
+    color: #ffffff;
+
 }
 
 .copyright{
     float: left;
-    margin-left: 25px;
+    margin: 25px 0px;
 }
 
 .bottomlinks{
@@ -166,33 +171,28 @@ p{
 .bottomlinks li{
     float: left;
     list-style: none;
-    margin-left: 25px;
-    margin-right:25px;
+    margin: 20px 25px;
+
+
 }
 
 .bottomlinks li a{
     color: #eeeeee;
 }
 
-.hotline-bar {
-    position: absolute;
-    background: rgba(230, 8, 8, 0.75);
-    height: 40px;
-    width: 180px;
-    line-height: 40px;
-    border-radius: 50px;
-    padding: 0 10px;
-    background-size: 100%;
-    transition: all 0.8s;
-/*    z-index: 999;*/
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
+.hotline{
+    position: fixed;
+    /*background: rgba(230, 8, 8, 0.75);*/
+    /*height: 40px;*/
+    /*width: 180px;*/
+/*    line-height: 40px;*/
+/*    border-radius: 50px;*/
+/*    padding: 0 10px;*/
+/*    background-size: 100%;*/
+/*    transition: all 0.8s;*/
+/*!*    z-index: 999;*!*/
+/*    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);*/
     right: 33px;
-    bottom: 20px;
+    bottom: 50px;
 }
-.text-hotline{
-    color: #fff;
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    line-height: 40px;
-}
+
