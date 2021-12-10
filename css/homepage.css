@@ -36,8 +36,9 @@ p{
 .header{
     position: fixed;
     background-color: #e89245;
-    border-bottom: 1px solid #eeeeee;
+    /*border-bottom: 1px solid #eeeeee;*/
     padding: 5px 0;
+    height: 139px;
 }
 .logo{
     float: left;
@@ -46,6 +47,7 @@ p{
 .toplinks{
     float: right;
     text-transform: uppercase;
+
 }
 .logo a{
     font-size: 28px;
@@ -75,6 +77,9 @@ p{
     padding: 20px 0;
     top:128px;
 }
+.item{
+    ;
+}
 .menu li{
 
     float: left;
@@ -86,7 +91,6 @@ p{
 .menu li a{
     color: #222222;
     font-weight: 500;
-    /*margin-left: 50px;*/
 }
 
 .thumbnail{
@@ -106,27 +110,12 @@ p{
     padding-right: 15px;
     margin-bottom: 50px;
 }
-.sidebar{
-    display: inline-block;
-    width: 25%;
-    padding-left: 15px;
-}
 .content .entry{
     float: left;
     width: 100%;
     background-color: #ffffff;
     padding: 30px;
 }
-.sidebar .block{
-    float: left;
-    width: 50%;
-    padding: 30px;
-    background-color: #e89245;
-    margin-bottom: 30px;
-    margin-left: 50px;
-    border-radius: 20px 20px 20px 20px;
-}
-
 .button {
     display: flex;
     justify-content: center;
@@ -161,11 +150,14 @@ p{
 
 .copyright{
     float: left;
-    margin: 25px 0px;
+    margin: 20px 0px;
+    height: 50px;
+
 }
 
 .bottomlinks{
     float: right;
+    height: 50px;
 }
 
 .bottomlinks li{
@@ -193,6 +185,6 @@ p{
 /*!*    z-index: 999;*!*/
 /*    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);*/
     right: 33px;
-    bottom: 50px;
+
 }
 
