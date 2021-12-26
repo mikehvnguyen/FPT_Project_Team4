@@ -94,14 +94,16 @@
 /*    border-radius:50%;*/
 /*    -moz-border-radius:50%;*/
 
-img{
-    max-width: 100%; /*hình được căn giữa*/
-    vertical-align: middle;
+/*img{*/
+/*    max-width: 100%; !*hình được căn giữa*!*/
+/*    vertical-align: middle;*/
 
-}
+/*}*/
 p{
     margin-bottom: 10px; /*doan van day xuong duoi 10px*/
 }
+
+
 .section{
     float:left;
     width:100%; /*cac phan tu chiem chon man hinh, khoi ko bi nhay ra ngoai*/
@@ -109,15 +111,23 @@ p{
 .menu li{
     list-style: none; /*mất chấm ở đầu */
     float: left; /* ngang hang nhau */
-    margin-right: 20px;
+    margin-left: 50px;
 }
 .menu li a{
     color: #222222;
     font-weight: 500;
 }
-.main{
-    margin-top: 30px;
+.content-menu{
+    float:left;
+    width: 100%;
+    margin-bottom: 10px;
 }
+.content-menu .entry{
+    float: left;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
 .section-category {
     margin-bottom: 20px;
     padding: 20px;
@@ -125,17 +135,37 @@ p{
 .product-list li{
     list-style: none;
     float:left;
-    margin-right: 20px;
+    padding: 30px;
+    margin-left: 1px;
 }
-.product-inner .product-price {
-    color: #ff0000;
-    font-size: 24px;
+.product-list {/* menu chính */
+    float: left;
+    background-color: #ffffff;
+    padding: 0 25px;
+
+}
+
+
+.product-title{
+    margin-top: 25px;
+    font-size: 14px;
     font-weight: 700;
 }
 .describe{
-    color: #435656;
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Roboto;
+
+    color: #a29191;
 }
-button-action{
+.product-inner .product-price {
+    color: #ff0000;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.button-action{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,3 +175,7 @@ button-action{
 .product-list .product-item img:hover{
     transform: scale(1.05);
 }
+
+
+
+
