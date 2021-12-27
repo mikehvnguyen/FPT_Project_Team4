@@ -5,6 +5,14 @@
     /*float:left;*/
     /*width:100%; !*cac phan tu chiem chon man hinh, khoi ko bi nhay ra ngoai*!*/
 /*}*/
+
+/*.body{*/
+/*    background-image: url(../images/bg-beside-1.jpg), url(../images/bg-beside-2.jpg), url(../images/bg-beside-3.jpg), url(../images/bg-beside-4.jpg);*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: right 140px, left 1300px, right 1725px, left 2240px;*/
+/*    background-color: #d3872b;*/
+/*    padding-bottom: 20px;*/
+/*}*/
 .menu li{
     list-style: none; /*mất chấm ở đầu */
     float: left; /* ngang hang nhau */
@@ -76,7 +84,7 @@ h2{
 .hotline-bar .hotline {
     position: fixed;
     right: 33px;
-    bottom: 60px;
+    bottom: 70px;
 }
 
 
