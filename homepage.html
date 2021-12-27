@@ -48,23 +48,53 @@
     <div class="container">
         <article class="content">
             <div class="entry">
-                <p>
-                    <a href="#">
-                        <img src="images/h6.jpg"/>
-                    </a>
-                    <br/>
-                    <a href="#">
-                        <img src="images/h7.jpg"/>
-                    </a>
-                    <br/>
-                    <a href="#">
-                        <img src="images/h8.jpg"/>
-                    </a>
-                    <br/>
-                    <a href="#">
-                        <img src="images/h9.jpg"/>
-                    </a>
-                </p>
+
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 4</div>
+                        <a href="#">
+                            <img src="images/h6.jpg" style="width:100%"/>
+                        </a>
+                        <div class="text">Caption One</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 4</div>
+                        <a href="#">
+                            <img src="images/h7.jpg" style="width:100%"/>
+                        </a>
+                        <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 4</div>
+                        <a href="#">
+                            <img src="images/h8.jpg" style="width:100%"/>
+                        </a>
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 4</div>
+                        <a href="#">
+                            <img src="images/h9.jpg" style="width:100%"/>
+                        </a>
+                        <div class="text">Caption Four</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+
             </div>
         </article>
         <div class="button">
@@ -76,7 +106,7 @@
 
 <div class="footer">
     <div class="copyright">
-    <p>Copyright 2020 Vietnam Burger Corporation. All Rights Reserved.</p>
+    <p>Copyright 2020 Vietnam Burger Corporation.  All Rights Reserved.</p>
     </div>
 
     <ul class="bottomlinks">
@@ -84,14 +114,36 @@
         <li><a href="#"> Contact</a></li>
     </ul>
 
-
 </div>
 
-<div class="hotline-bar">
-    <a href="#">
-        <span class="text-hotline">0123456789</span>
-    </a>
-</div>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
 
 </body>
 </html>
