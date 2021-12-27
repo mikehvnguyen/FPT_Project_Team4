@@ -11,7 +11,7 @@ body{
     color: #f0ebe5;
     text-align: center;
     background-color:#eeeeee;
-    cursor: pointer;
+/*    cursor: pointer;*/
 }
 a{
     text-decoration: none;
@@ -108,7 +108,8 @@ p{
     float:left;
     width: 100%;
     padding-right: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 .content .entry{
     float: left;
@@ -172,9 +173,6 @@ p{
 }
 
 
-
-}
-
 * {box-sizing: border-box}
 body {font-family: 'Roboto', sans-serif; margin:0}
 .mySlides {display: none}
@@ -206,6 +204,11 @@ img {vertical-align: middle;}
 /* Position the "next button" to the right */
 .next {
     right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
     border-radius: 3px 0 0 3px;
 }
 
