@@ -81,7 +81,7 @@ p{
     top:128px;
 }
 .item{
-    ;
+
 }
 .menu li{
 
@@ -279,3 +279,8 @@ img {vertical-align: middle;}
     .prev, .next,.text {font-size: 11px}
 }
 
+.hotline-bar .hotline {
+    position: fixed;
+    right: 33px;
+    bottom: 70px;
+}
